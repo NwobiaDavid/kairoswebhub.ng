@@ -7,6 +7,7 @@ import Projects from './(sections)/Projects';
 import Resources from './(sections)/Resources';
 import Mission from './(sections)/Mission';
 import OurProcess from './(sections)/OurProcess';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
       <OurProcess />
       {/* <Mission /> */}
       <Resources />
-      
+      <Footer/>
     </main>
   );
 }
