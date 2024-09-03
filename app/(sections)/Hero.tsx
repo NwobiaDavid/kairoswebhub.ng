@@ -12,8 +12,8 @@ const Hero = () => {
                     <div className=' w-full lg:w-[60%] ' >
                         <div>
                             <div className=' mb-[35px] ' >
-                                <h1 className=' font-semibold text-6xl ' >Establish online presence of your business that drives revenue</h1>
-                                <p className=' max-w-[70%] my-5 text-lg ' >Results-driven web design, development, SEO, branding, copywriting & digital strategy.</p>
+                                <h1 className=' font-semibold text-2xl lg:text-6xl ' >Establish online presence of your business that drives revenue</h1>
+                                <p className=' max-w-[70%] my-5 text-md lg:text-lg ' >Results-driven web design, development, SEO, branding, copywriting & digital strategy.</p>
                             </div>
                             <div>
                                 <button className=' py-3 px-5 lg:px-10 lg:py-5 flex items-center justify-between text-black bg-blue-400 hover:bg-blue-500 duration-200  rounded-md ' >

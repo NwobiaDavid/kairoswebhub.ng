@@ -42,9 +42,9 @@ const OurProcess = () => {
 
     return (
         <div className=' bg-white text-black ' >
-            <div className=' max-w-7xl mx-auto py-10 ' >
+            <div className=' max-w-full lg:max-w-7xl mx-auto py-10 ' >
                 <div className='flex w-full justify-center mb-10 items-center flex-col ' >
-                    <h1 className='text-5xl mb-10 font-semibold capitalize ' >our process</h1>
+                    <h1 className='text-2xl lg:text-5xl mb-10 font-semibold capitalize ' >our process</h1>
 
                     <div className=' grid xl:grid-cols-5 md:grid-cols-3 grid-cols-1 gap-3 ' >
 

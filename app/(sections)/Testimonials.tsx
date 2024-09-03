@@ -25,12 +25,12 @@ const Testimonials = () => {
         },
     ]
     return (
-        <div className=' w-full h-[40vh] bg-slate-50 flex justify-center items-center text-black ' >
+        <div className=' w-full lg:h-[40vh] bg-slate-50 flex lg:flex-row flex-col justify-center items-center text-black ' >
 
-            <div className="flex w-[70%] justify-between gap-5 items-center h-full  ">
+            <div className="flex flex-col lg:flex-row w-full lg:w-[70%] justify-between gap-5 items-center h-full  ">
                 {data.map((item, index) => (
                     <div key={index} className="w-full p-5 ">
-                        <span className=' max-w-[25%] justify-around flex text-yellow-500  ' > <FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStar /> </span>
+                        <span className='max-w-full  lg:max-w-[25%] justify-around flex text-yellow-500  ' > <FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStar /> </span>
                         
                         <p className=' text-xl my-5 ' >
                             {item.comment}

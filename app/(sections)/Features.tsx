@@ -16,9 +16,9 @@ const Features = () => {
     ]
 
     return (
-        <div className=' w-full bg-white text-black flex justify-center items-center h-[70vh] ' >
-            <div className='flex gap-5 justify-center h-[80%] w-full items-center' >
-                <div className=" w-[45%] flex justify-end " >
+        <div className=' w-full bg-white text-black flex justify-center items-center lg:h-[70vh] ' >
+            <div className='flex flex-col lg:flex-row gap-5 justify-center h-[80%] w-full items-center' >
+                <div className=" w-full lg:w-[45%] flex justify-end " >
                     {/* <div> */}
                         <Image
                         className="z-0"
@@ -29,9 +29,9 @@ const Features = () => {
                         />
                     {/* </div> */}
                 </div>
-                <div className=" w-[55%] " >
+                <div className=" w-full lg:w-[55%] " >
                     <div className="w-[60%] ">
-                        <h1 className=' text-5xl font-semibold mb-4 ' >Everything your site needs for success</h1>
+                        <h1 className=' text-2xl lg:text-5xl font-semibold mb-4 ' >Everything your site needs for success</h1>
                         <div className='grid grid-cols-2 gap-5 ' >
                             {contents.map((item, index) => (
                                 <div key={index} className='duration-200 font-semibold flex justify-center rounded-sm items-center p-3 text-center w-full h-[150px] bg-gray-100    ' >

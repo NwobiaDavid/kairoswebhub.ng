@@ -26,15 +26,15 @@ const Resources = () => {
         <div className=' text-black bg-slate-50 ' >
             <div className=' flex justify-center items-center flex-col py-16  ' >
                 <div className=' w-full mb-10 justify-center flex items-center p-5 ' >
-                    <h1 className='text-5xl capitalize font-semibold' >
+                    <h1 className=' text-2xl  lg:text-5xl capitalize font-semibold' >
                         helpful resources
                     </h1>
                 </div>
 
-                <div className=' grid grid-cols-3 gap-3 ' >
+                <div className=' grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-3 ' >
 
                     {resources.map((item, index) => (
-                        <Link href={item.link} target='_blank' key={index} className=' hover:shadow-lg  duration-200 bg-white rounded-sm h-[550px] w-[450px] p-4 ' >
+                        <Link href={item.link} target='_blank' key={index} className=' hover:shadow-lg  duration-200 bg-white rounded-sm lg:h-[550px] lg:w-[450px] w-[200px] h-[150px]  p-4 ' >
                             <div className='w-full flex justify-center items-center h-[60%] ' >
                                 <Image
                                     radius='sm'

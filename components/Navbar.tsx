@@ -128,15 +128,21 @@ const Navbar: React.FC = () => {
             <a href="#" className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
               Home
             </a>
-            <a href="#" className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-              About
-            </a>
-            <a href="#" className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-              Services
-            </a>
-            <a href="#" className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-              Contact
-            </a>
+            <a href="#" className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-sm font-medium">
+                Testimonial
+              </a>
+              <a href="#" className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-sm font-medium">
+                About
+              </a>
+              <a href="#" className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-sm font-medium">
+                Works
+              </a>
+              <a href="#" className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-sm font-medium">
+                Process
+              </a>
+              <a href="#" className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-sm font-medium">
+                Resources
+              </a>
           </div>
         </motion.div>
       )}

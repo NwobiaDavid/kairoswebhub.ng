@@ -39,15 +39,13 @@ const Projects = () => {
         <div className="w-full mb-10">
         <h1 className='text-5xl font-semibold ' >Recent works</h1>
         </div>
-        <div className=' grid gap-3 grid-cols-3 ' >
+        <div className=' grid gap-3 md:grid-cols-2 grid-cols-1 lg:grid-cols-3 ' >
             {projects.map((item, index)=>(
-                <Link href={item.link} target='_blank' key={index} className=' hover:shadow-lg  duration-200 bg-white rounded-sm h-[350px] w-[400px] p-4 ' >
+                <Link href={item.link} target='_blank' key={index} className=' hover:shadow-lg  duration-200 bg-white rounded-sm h-[350px] w-full p-4 ' >
                     <div className='w-full flex items-center h-[80%] ' >
                     <Image
                     radius='sm'
-                    className='border z-0 '
-                            width={400}
-                            height={250}
+                    className='border z-0 w-[200px] h-[150px] lg:w-[400px] lg:h-[250px]  '
                             alt="NextUI hero Image with delay"
                             src={item.image}
                         />
