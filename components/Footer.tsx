@@ -1,3 +1,4 @@
+import { Image } from '@nextui-org/react'
 import React from 'react'
 import { FaRocket } from 'react-icons/fa'
 
@@ -6,8 +7,18 @@ const Footer = () => {
 
     return (
         <div className=' bg-slate-950 h-[70vh] text-white w-full relative ' >
-            <div className="absolute">
-                
+            <div className="absolute left-[10%] opacity-50 top-[10%] ">
+              <div className=' w-[300px] gap-4 p-4 flex flex-col h-[300px] ' >
+                <div className='w-full h-[60%] flex gap-4 ' >
+                    <div className="bg-blue-400 h-full rounded-md w-[70%] "></div>
+                    <div className="bg-blue-400 h-full rounded-md w-[30%] "></div>
+                </div>
+                <div className='w-full h-[40%] flex gap-4 ' >
+                    <div className="bg-blue-400 h-full rounded-md w-[20%] "></div>
+                    <div className="bg-blue-400 h-full rounded-md w-[80%] "></div>
+                </div>
+
+              </div>
             </div>
 
             <div className="max-w-7xl h-full mx-auto ">
