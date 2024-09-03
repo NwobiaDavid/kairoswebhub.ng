@@ -97,13 +97,19 @@ const Navbar: React.FC = () => {
                 Home
               </a>
               <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                Testimonial
+              </a>
+              <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                 About
               </a>
               <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-                Services
+                Works
               </a>
               <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-                Contact
+                Process
+              </a>
+              <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                Resources
               </a>
             </div>
           </div>

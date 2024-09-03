@@ -52,7 +52,7 @@ const OurProcess = () => {
                             <div key={index} className=' p-2 flex  text-center  xl:w-[100px] xl:h-[200px] justify-center flex-col items-center ' >
                                 <Image width={50}
                                     height={50}
-                                    className=' rounded-none '
+                                    className=' z-0 rounded-none '
                                     src={item.icon}
                                     alt={item.title} />
 
@@ -72,7 +72,7 @@ const OurProcess = () => {
                         >
                             <div className='w-[30%] flex justify-center items-center'>
                                 <Image
-                                    className='rounded-none w-full h-full object-contain  '
+                                    className=' z-0 rounded-none w-full h-full object-contain  '
 
                                     alt={item.title}
                                     src={item.image}
