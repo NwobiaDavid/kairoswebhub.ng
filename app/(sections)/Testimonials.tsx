@@ -25,7 +25,7 @@ const Testimonials = () => {
         },
     ]
     return (
-        <div className=' w-full h-[40vh] bg-slate-100 flex justify-center items-center text-black ' >
+        <div className=' w-full h-[40vh] bg-slate-50 flex justify-center items-center text-black ' >
 
             <div className="flex w-[70%] justify-between gap-5 items-center h-full  ">
                 {data.map((item, index) => (

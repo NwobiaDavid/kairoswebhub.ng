@@ -34,7 +34,7 @@ const Projects = () => {
         
     ]
   return (
-    <div className='w-full bg-slate-100  text-black '>
+    <div className='w-full bg-slate-50  text-black '>
       <div className=" max-w-7xl mx-auto py-16 ">
         <div className="w-full mb-10">
         <h1 className='text-5xl font-semibold ' >Recent works</h1>

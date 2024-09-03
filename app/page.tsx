@@ -4,6 +4,9 @@ import Hero from './(sections)/Hero';
 import Testimonials from './(sections)/Testimonials';
 import Features from './(sections)/Features';
 import Projects from './(sections)/Projects';
+import Resources from './(sections)/Resources';
+import Mission from './(sections)/Mission';
+import OurProcess from './(sections)/OurProcess';
 
 export default function Home() {
   return (
@@ -14,11 +17,10 @@ export default function Home() {
       <Testimonials />
       <Features />
       <Projects />
+      <OurProcess />
+      {/* <Mission /> */}
+      <Resources />
       
-      <div className="h-screen bg-gray-100">
-        <h1 className="text-center pt-40 text-3xl">Scroll to See Navbar Effect</h1>
-        <div className="h-[2000px]"></div>
-      </div>
     </main>
   );
 }

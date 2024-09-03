@@ -21,6 +21,7 @@ const Features = () => {
                 <div className=" w-[45%] flex justify-end " >
                     {/* <div> */}
                         <Image
+                        className="z-0"
                             width={400}
                             height={500}
                             alt="NextUI hero Image with delay"
