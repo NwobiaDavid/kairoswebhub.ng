@@ -7,16 +7,16 @@ import { FaRocket, FaStar } from "react-icons/fa";
 const Hero = () => {
     return (
         <div className='w-full pt-40 h-full bg-black ' >
-            <div className=" mx-auto   max-w-7xl  h-full  ">
-                <div className="flex pt-20 justify-between h-[85%] w-full ">
-                    <div className=' w-[60%] ' >
+            <div className=" mx-auto   lg:max-w-7xl  h-full  ">
+                <div className="flex lg:flex-row flex-col pt-20 justify-between h-[85%] w-full ">
+                    <div className=' w-full lg:w-[60%] ' >
                         <div>
                             <div className=' mb-[35px] ' >
                                 <h1 className=' font-semibold text-6xl ' >Establish online presence of your business that drives revenue</h1>
                                 <p className=' max-w-[70%] my-5 text-lg ' >Results-driven web design, development, SEO, branding, copywriting & digital strategy.</p>
                             </div>
                             <div>
-                                <button className=' px-10 py-5 flex items-center justify-between text-black bg-blue-400 hover:bg-blue-500 duration-200  rounded-md ' >
+                                <button className=' py-3 px-5 lg:px-10 lg:py-5 flex items-center justify-between text-black bg-blue-400 hover:bg-blue-500 duration-200  rounded-md ' >
                                     <FaRocket />
                                     <span className="ml-2 font-bold capitalize ">get a proposal</span>
                                 </button>
@@ -41,7 +41,7 @@ const Hero = () => {
 
 
 
-                    <div className=' w-[40%] h-full flex justify-center items-center flex-col p-3 ' >
+                    <div className=' w-full lg:w-[40%] h-full flex justify-center items-center flex-col p-3 ' >
                         <div className="w-full mb-3 flex h-[40%] justify-center gap-3 items-center">
                             <div className=' w-[60%] h-full bg-blue-500 rounded-lg p-2 ' >e</div>
                             <div className=' w-[40%] h-full bg-blue-500 rounded-lg p-2 ' >e</div>
@@ -55,7 +55,7 @@ const Hero = () => {
                 </div>
 
                 <div className="w-full h-[15%]  justify-center flex items-end ">
-                    <h1 className=' font-bold p-4 text-4xl tracking-wider capitalize opacity-50 ' >the blue pixel agency</h1>
+                    <h1 className=' font-bold p-4 text-2xl lg:text-4xl tracking-wider capitalize opacity-30 ' >the blue pixel agency</h1>
                 </div>
             </div>
         </div>
