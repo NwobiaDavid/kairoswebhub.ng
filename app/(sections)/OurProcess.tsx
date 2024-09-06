@@ -42,11 +42,11 @@ const OurProcess = () => {
 
     return (
         <div className=' bg-white text-black ' >
-            <div className=' max-w-full lg:max-w-7xl mx-auto py-10 ' >
+            <div className=' max-w-full lg:max-w-7xl mx-auto py-16 lg:py-10 px-4 lg:px-0 ' >
                 <div className='flex w-full justify-center mb-10 items-center flex-col ' >
-                    <h1 className='text-2xl lg:text-5xl mb-10 font-semibold capitalize ' >our process</h1>
+                    <h1 className=' text-5xl mb-10 font-semibold capitalize ' >our process</h1>
 
-                    <div className=' grid xl:grid-cols-5 md:grid-cols-3 grid-cols-1 gap-3 ' >
+                    <div className=' grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-3 ' >
 
                         {process.map((item, index) => (
                             <div key={index} className=' p-2 flex  text-center  xl:w-[100px] xl:h-[200px] justify-center flex-col items-center ' >
@@ -68,17 +68,18 @@ const OurProcess = () => {
                     {process.map((item, index) => (
                         <div
                             key={index}
-                            className={`flex px-5 py-7 border-b mb-5 ${index % 2 === 0 ? 'flex-row-reverse' : ''}`}
+                            className={`flex px-0 lg:px-5 py-7 flex-col lg:flex-row border-b mb-5 ${index % 2 === 0 ? 'flex-row-reverse' : ''}`}
                         >
-                            <div className='w-[30%] flex justify-center items-center'>
+                            <div className='w-full lg:w-[30%] flex justify-center items-center'>
                                 <Image
                                     className=' z-0 rounded-none w-full h-full object-contain  '
-
                                     alt={item.title}
                                     src={item.image}
                                 />
                             </div>
-                            <div className='w-[70%] px-5 py-2 '>
+
+
+                            <div className=' w-full mt-3 lg:mt-0 lg:w-[70%] px-2 lg:px-5 py-2 '>
                                 <h2 className='text-3xl text-blue-500 font-semibold mb-2'>
                                     {item.header}
                                 </h2>
