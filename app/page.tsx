@@ -11,17 +11,17 @@ import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
-    <main>
+    <main className=' ' >
       <Navbar />
-      <div className="h-[115vh]"><Hero/></div>
+      <div className=" h-[125vh] lg:h-[115vh]"><Hero/></div>
       
       <Testimonials />
       <Features />
-      <Projects />
-      <OurProcess />
+      {/* <Projects />
+      <OurProcess /> */}
       {/* <Mission /> */}
-      <Resources />
-      <Footer/>
+      {/* <Resources />
+      <Footer/> */}
     </main>
   );
 }

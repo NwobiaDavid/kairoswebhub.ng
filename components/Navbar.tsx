@@ -39,10 +39,10 @@ const Navbar: React.FC = () => {
       transition={{ type: 'spring', stiffness: 300, damping: 30 }}
       className={`fixed top-0 w-full z-10 bg-black transition-transform duration-300 ease-in-out`}
     >
-      <div className="max-w-7xl py-5 mx-auto px-4 sm:px-6 lg:px-8">
+      <div className=" lg:max-w-7xl py-5 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <a href="/" className="text-white text-2xl font-bold">
+            <a href="/" className="text-white text-lg lg:text-2xl font-bold">
               TheBluePixelAgency
             </a>
           </div>
