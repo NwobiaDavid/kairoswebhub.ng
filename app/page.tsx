@@ -20,8 +20,8 @@ export default function Home() {
       <Projects />
       <OurProcess />
       {/* <Mission /> */}
-      {/* <Resources />
-      <Footer/> */}
+      <Resources />
+      <Footer/>
     </main>
   );
 }
