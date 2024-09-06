@@ -3,6 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import { Avatar, AvatarGroup, AvatarIcon } from "@nextui-org/avatar";
 import { FaRocket, FaStar } from "react-icons/fa";
+import { roboto_mono, luckiest_guy, black_han_sans, lato } from "../fonts";
 
 const Hero = () => {
     return (
@@ -12,7 +13,7 @@ const Hero = () => {
                     <div className=' w-full px-3 lg:px-0 lg:w-[60%] ' >
                         <div>
                             <div className=' mb-[35px] ' >
-                                <h1 className=' font-semibold text-5xl lg:text-6xl ' >Establish online presence of your business that drives revenue</h1>
+                                <h1 className={` font-semibold text-5xl lg:text-6xl  ${black_han_sans} `} >Establish online presence of your business that drives revenue</h1>
                                 <p className=' max-w-full lg:max-w-[70%] my-5 text-xl ' >Results-driven web design, development, SEO, branding, copywriting & digital strategy.</p>
                             </div>
                             <div className='  ' >
