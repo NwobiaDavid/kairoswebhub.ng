@@ -44,7 +44,7 @@ const OurProcess = () => {
         <div className=' bg-white text-black ' >
             <div className=' max-w-full lg:max-w-7xl mx-auto py-16 lg:py-10 px-4 lg:px-0 ' >
                 <div className='flex w-full justify-center mb-10 items-center flex-col ' >
-                    <h1 className=' text-5xl mb-10 font-semibold capitalize ' >our process</h1>
+                    <h1 className=' text-5xl lg:text-6xl mb-10 font-semibold capitalize ' >our process</h1>
 
                     <div className=' grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-3 ' >
 
@@ -56,7 +56,7 @@ const OurProcess = () => {
                                     src={item.icon}
                                     alt={item.title} />
 
-                                <h3 className=' mt-5 font-medium text-sm ' >{item.title}</h3>
+                                <h3 className=' mt-5 font-medium text-base lg:text-sm ' >{item.title}</h3>
                             </div>
                         ))}
 
@@ -68,7 +68,7 @@ const OurProcess = () => {
                     {process.map((item, index) => (
                         <div
                             key={index}
-                            className={`flex px-0 lg:px-5 py-7 flex-col lg:flex-row border-b mb-5 ${index % 2 === 0 ? 'flex-row-reverse' : ''}`}
+                            className={`flex px-0 lg:px-5 py-7 flex-col lg:flex-row border-b mb-5 ${index % 2 === 0 ? ' flex-col-reverse lg:flex-row-reverse' : ''}`}
                         >
                             <div className='w-full lg:w-[30%] flex justify-center items-center'>
                                 <Image

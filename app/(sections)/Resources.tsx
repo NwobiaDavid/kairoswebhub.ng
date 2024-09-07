@@ -7,26 +7,31 @@ const Resources = () => {
 
     const resources = [
         {
-            title: "top 10 ways of doing something",
-            image: "https://cdn.prod.website-files.com/637116ed63d653540d84bcc3/652854bc05523722a7e5422b_Twisted%20Nail%20Mockup-p-500.jpg",
-            link: "#"
+            title: "7 reasons to make your car dealership website professional",
+            image: "/assets/resources/one.jpg",
+            link: "https://www.pixelconcept.de/en/beste-grunde-fur-autohaus-webseite/"
         },
         {
-            title: "top 10 ways of doing something",
-            image: "https://cdn.prod.website-files.com/637116ed63d653540d84bcc3/652854bc05523722a7e5422b_Twisted%20Nail%20Mockup-p-500.jpg",
-            link: "#"
+            title: "Importance of Your Dealership's Website",
+            image: "/assets/resources/to.jpeg",
+            link: "Importance of Your Dealership's Website"
         },
         {
-            title: "top 10 ways of doing something",
-            image: "https://cdn.prod.website-files.com/637116ed63d653540d84bcc3/652854bc05523722a7e5422b_Twisted%20Nail%20Mockup-p-500.jpg",
-            link: "#"
+            title: "What Key Features Do Car Buyers Expect From Car Dealer Websites?",
+            image: "/assets/resources/two.jpg",
+            link: "https://www.dragon2000.co.uk/what-key-features-do-car-buyers-expect-from-car-dealer-websites/"
+        },
+        {
+            title: "The Importance of Local SEO for Car Dealerships",
+            image: "/assets/resources/four.jpeg",
+            link: "https://www.get.dealer/blog/the-importance-of-local-seo-for-car-dealerships"
         },
     ]
     return (
         <div className=' text-black bg-slate-50 ' >
             <div className=' flex justify-center items-center flex-col py-16  ' >
                 <div className=' w-full mb-10 justify-center flex items-center p-5 ' >
-                    <h1 className='text-5xl capitalize font-semibold' >
+                    <h1 className='text-5xl lg:text-6xl capitalize font-semibold' >
                         helpful resources
                     </h1>
                 </div>

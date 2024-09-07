@@ -17,7 +17,7 @@ const Hero = () => {
                                 <p className=' max-w-full lg:max-w-[70%] my-5 text-xl ' >Results-driven web design, development, SEO, branding, copywriting & digital strategy.</p>
                             </div>
                             <div className='  ' >
-                                <button className=' px-10 py-5 w-full flex items-center justify-center lg:justify-between text-black bg-blue-400 hover:bg-blue-500 duration-200  rounded-md ' >
+                                <button className=' px-10 py-5 w-full lg:w-fit flex items-center justify-center lg:justify-between text-black bg-blue-400 hover:bg-blue-500 duration-200  rounded-md ' >
                                     <FaRocket />
                                     <span className="ml-2 font-bold capitalize ">get a proposal</span>
                                 </button>
@@ -30,7 +30,7 @@ const Hero = () => {
                                 "Our new site has a 60% higher conversion rate than our old one"
                             </p>
                             <div className=' flex items-center py-1 lg:py-3 ' >
-                                <Avatar className=' max-w-sm  lg:max-w-lg  ' size='md' isBordered src="https://i.pravatar.cc/150?u=a042581f4e29026024d" />
+                                <Avatar className='  ' size='lg' isBordered src="https://i.pravatar.cc/150?u=a042581f4e29026024d" />
 
                                 <div className=' ml-4 opacity-30 text-sm ' >
                                     <h2>JP McAvoy</h2>

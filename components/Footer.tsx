@@ -37,7 +37,7 @@ const Footer = () => {
 
                 <div className=' w-full h-[20%] mt-10 lg:mt-0 py-5 lg:py-0 flex justify-center items-center ' >
 
-                    <div className=' w-full lg:text-base text-center leading-6 flex-col flex justify-between border-t py-5 ' >
+                    <div className=' w-full lg:text-base text-center leading-6 flex-col flex lg:flex-row justify-between border-t py-5 ' >
                         <span>Copyright © The Blue Pixel Agency Inc.</span>
                         <span className=' my-3 lg:my-0 ' >Privacy Policy</span>
                         <span>Based in Lagos, Ogun & Ebonyi</span>

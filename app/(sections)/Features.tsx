@@ -21,16 +21,16 @@ const Features = () => {
                 <div className=" w-full lg:w-[45%] flex justify-end " >
                     {/* <div> */}
                         <Image
-                        className="z-0 lg:rounded-md rounded-none lg:w-[400px] w-full h-[300px] lg:h-[500px] "
+                        className="z-0 lg:rounded-md object-cover rounded-none lg:w-[400px] w-full h-[300px] lg:h-[500px] "
                            
                             alt="NextUI hero Image with delay"
-                            src="https://app.requestly.io/delay/5000/https://nextui-docs-v2.vercel.app/images/hero-card-complete.jpeg"
+                            src="/assets/features.jpg"
                         />
                     {/* </div> */}
                 </div>
                 <div className=" w-full mt-10 lg:mt-0 lg:w-[55%] " >
                     <div className=" w-full lg:w-[60%] ">
-                        <h1 className=' text-5xl lg:text-7xl font-semibold mb-4 text-center lg:text-left ' >Everything your site needs for success</h1>
+                        <h1 className=' text-5xl lg:text-6xl font-semibold mb-4 text-center lg:text-left ' >Everything your site needs for success</h1>
                         <div className='grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-5 ' >
                             {contents.map((item, index) => (
                                 <div key={index} className='duration-200 flex justify-center text-lg rounded-md items-center p-3 text-center w-full h-[150px] bg-slate-100    ' >
