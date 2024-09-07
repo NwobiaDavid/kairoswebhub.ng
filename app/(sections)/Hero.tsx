@@ -15,7 +15,7 @@ const Hero = () => {
           <div className='w-full px-3 lg:px-0 lg:w-[60%]'>
             <div>
               <div className='mb-[35px]'>
-                <h1 className={`font-semibold text-5xl leading-9 lg:text-6xl ${black_han_sans}`}>Establish online presence of your business that drives revenue</h1>
+                <h1 className={`font-semibold text-5xl leading-9 lg:text-6xl opacity-95 ${black_han_sans}`}>Establish online presence of your business that drives revenue</h1>
                 <p className={`max-w-full lg:max-w-[70%] my-5 text-xl ${lato} `}>Results-driven web design, development, SEO, branding, copywriting & digital strategy.</p>
               </div>
               <div>

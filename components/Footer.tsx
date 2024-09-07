@@ -22,12 +22,12 @@ const Footer = () => {
       <div className="max-w-full lg:max-w-7xl h-full mx-auto">
         <div className="flex justify-center items-center w-full h-[80%]">
           <div className='w-full lg:w-[60%] text-center flex p-5 flex-col justify-center items-center mb-5'>
-            <h2 className='font-bold opacity-70 text-xl'>TheBluePixelAgency</h2>
+            <h2 className={`font-bold opacity-70 text-xl  ${black_han_sans}  `}>TheBluePixelAgency</h2>
             <h1 className={`text-5xl mt-10 ${black_han_sans}`}>As your partner, we treat your website like it&apos;s our own</h1>
             <h4 className={`text-lg my-10 ${lato} `}>Let&apos;s find out if we&apos;re a good fit for each other.</h4>
             <button className='px-10 py-5 flex items-center justify-between text-black bg-blue-400 hover:bg-blue-500 duration-200 rounded-md'>
               <FaRocket />
-              <span className="ml-2 font-bold capitalize">get a proposal</span>
+              <span className={`ml-2 font-bold capitalize ${lato} `}>get a proposal</span>
             </button>
           </div>
         </div>

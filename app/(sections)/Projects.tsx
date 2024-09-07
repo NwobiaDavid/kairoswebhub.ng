@@ -1,3 +1,5 @@
+"use client"
+
 import { Image } from '@nextui-org/react'
 import Link from 'next/link'
 import React from 'react'
@@ -38,7 +40,7 @@ const Projects = () => {
         <div id="projects" className='w-full bg-slate-50  text-black '>
             <div className=" lg:max-w-7xl lg:mx-auto py-16 px-4 lg:px-3 ">
                 <div className="w-full mb-10">
-                    <h1 className={`  text-center lg:text-left text-5xl lg:text-6xl font-semibold ${black_han_sans} `} >Recent works</h1>
+                    <h1 className={`  text-center lg:text-left text-5xl lg:text-6xl font-semibold ${black_han_sans} opacity-80 `} >Recent works</h1>
                 </div>
                 <div className=' grid gap-4 lg:gap-3 md:grid-cols-2 grid-cols-1 lg:grid-cols-3 ' >
                     {projects.map((item, index) => (

@@ -1,3 +1,5 @@
+"use client"
+
 import { Image } from '@nextui-org/react'
 import Link from 'next/link'
 import React from 'react'
@@ -29,15 +31,15 @@ const Resources = () => {
         },
     ]
     return (
-        <div id="resources" className=' text-black bg-slate-50 ' >
+        <div id="resources" className=' text-black bg-slate-100 ' >
             <div className=' flex justify-center items-center flex-col py-16  ' >
                 <div className=' w-full mb-10 justify-center flex items-center p-5 ' >
-                    <h1 className={`text-5xl lg:text-6xl capitalize font-semibold ${black_han_sans} `} >
+                    <h1 className={`text-5xl lg:text-6xl opacity-80 capitalize font-semibold ${black_han_sans} `} >
                         helpful resources
                     </h1>
                 </div>
 
-                <div className=' grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-4 lg:gap-3 ' >
+                <div className=' grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-5 lg:gap-3 ' >
 
                     {resources.map((item, index) => (
                         <Link href={item.link} target='_blank' key={index} className=' hover:shadow-lg  duration-200 bg-white rounded-sm lg:h-[550px] lg:w-[450px] w-full h-[500px]  p-4 ' >
