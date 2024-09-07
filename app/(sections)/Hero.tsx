@@ -38,7 +38,7 @@ const Hero = () => {
                     >
                         <div>
                             <div className='mb-[35px]'>
-                                <h1 className={`font-semibold text-5xl lg:leading-9 leading-[45px] lg:text-6xl opacity-95 ${black_han_sans}`}>
+                                <h1 className={`font-semibold text-5xl leading-[45px] lg:text-6xl opacity-95 ${black_han_sans}`}>
                                     Establish online presence of your business that drives revenue
                                 </h1>
                                 <p className={`max-w-full lg:max-w-[70%] my-5 text-xl ${lato}`}>
