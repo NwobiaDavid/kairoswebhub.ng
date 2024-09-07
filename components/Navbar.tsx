@@ -2,6 +2,8 @@
 
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import { black_han_sans, lato } from '@/app/fonts';
+import { Image } from '@nextui-org/react'
 
 const Navbar: React.FC = () => {
   const [show, setShow] = useState(true);
@@ -42,7 +44,10 @@ const Navbar: React.FC = () => {
       <div className=" lg:max-w-7xl py-5 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <a href="/" className="text-white text-lg lg:text-2xl font-bold">
+            <a href="/" className={`text-white text-lg flex items-center lg:text-2xl font-bold ${black_han_sans} `}>
+            <span className=' mr-2 ' >
+              <Image className=' h-[50px] w-[50px] ' src='/logo.png' alt="logo of thebluepixelagency" />
+            </span>
               TheBluePixelAgency
             </a>
           </div>
@@ -92,7 +97,7 @@ const Navbar: React.FC = () => {
             </button>
           </div>
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline  space-x-4">
+            <div className={`ml-10 flex items-baseline  ${lato} space-x-4`}>
               <a href="#" className="text-gray-300  hover:text-white px-3 py-2 rounded-md text-sm font-medium ">
                 Home
               </a>
@@ -105,10 +110,10 @@ const Navbar: React.FC = () => {
               <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                 Works
               </a>
-              <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+              <a href="#process" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                 Process
               </a>
-              <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+              <a href="#resources" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                 Resources
               </a>
             </div>
@@ -124,7 +129,7 @@ const Navbar: React.FC = () => {
           transition={{ duration: 0.3 }}
           className="md:hidden" id="mobile-menu"
         >
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <div className={`px-2 pt-2 pb-3 space-y-1 sm:px-3 ${lato}`}>
             <a href="#" className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
               Home
             </a>

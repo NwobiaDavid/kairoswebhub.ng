@@ -26,11 +26,11 @@ export const Black_Han_Sans_init = Black_Han_Sans({
 export const Lato_init = Lato({
   subsets: ['latin'],
   display: 'swap',
-  weight: "400",
+  weight: ['100', '300', '400', '700', '900'],
 })
 
 
-export const roboto_mono = roboto_mono_init.className;
+export const roboto_mono = roboto_mono_init.className.toString();
 export const luckiest_guy = Luckiest_Guy_init.className;
 export const black_han_sans = Black_Han_Sans_init.className;
 export const lato = Lato_init.className;

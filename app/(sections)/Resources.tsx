@@ -2,6 +2,7 @@ import { Image } from '@nextui-org/react'
 import Link from 'next/link'
 import React from 'react'
 import { HiArrowLongRight, HiArrowUpRight } from 'react-icons/hi2'
+import { roboto_mono, luckiest_guy, black_han_sans, lato } from "../fonts"; 
 
 const Resources = () => {
 
@@ -28,10 +29,10 @@ const Resources = () => {
         },
     ]
     return (
-        <div className=' text-black bg-slate-50 ' >
+        <div id="resources" className=' text-black bg-slate-50 ' >
             <div className=' flex justify-center items-center flex-col py-16  ' >
                 <div className=' w-full mb-10 justify-center flex items-center p-5 ' >
-                    <h1 className='text-5xl lg:text-6xl capitalize font-semibold' >
+                    <h1 className={`text-5xl lg:text-6xl capitalize font-semibold ${black_han_sans} `} >
                         helpful resources
                     </h1>
                 </div>

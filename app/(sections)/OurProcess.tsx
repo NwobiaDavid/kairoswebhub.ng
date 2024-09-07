@@ -1,5 +1,6 @@
 import { Image } from '@nextui-org/react'
 import React from 'react'
+import { roboto_mono, luckiest_guy, black_han_sans, lato } from "../fonts"; 
 
 const OurProcess = () => {
     const process = [
@@ -41,10 +42,10 @@ const OurProcess = () => {
     ]
 
     return (
-        <div className=' bg-white text-black ' >
+        <div id="process" className=' bg-white text-black ' >
             <div className=' max-w-full lg:max-w-7xl mx-auto py-16 lg:py-10 px-4 lg:px-0 ' >
                 <div className='flex w-full justify-center mb-10 items-center flex-col ' >
-                    <h1 className=' text-5xl lg:text-6xl mb-10 font-semibold capitalize ' >our process</h1>
+                    <h1 className={` text-5xl lg:text-6xl mb-10 font-semibold capitalize ${black_han_sans} `} >our process</h1>
 
                     <div className=' grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-3 ' >
 
