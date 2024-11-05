@@ -6,6 +6,8 @@ import { Avatar } from "@nextui-org/avatar";
 import { FaRocket, FaStar } from "react-icons/fa";
 import { motion, useInView } from 'framer-motion';
 import { roboto_mono, luckiest_guy, black_han_sans, lato } from "../fonts";  // Make sure the path is correct
+import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Checkbox, Input, Link } from "@nextui-org/react";
+import { CiLock, CiMail } from 'react-icons/ci';
 
 const Hero = () => {
     // Ref to track the section's visibility
@@ -22,6 +24,9 @@ const Hero = () => {
         hidden: { opacity: 0, y: 30 },
         visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
     };
+
+    const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
 
     return (
         <div ref={ref} id='hero' className='w-full pt-20 lg:pt-40 h-full bg-black'>
@@ -42,14 +47,66 @@ const Hero = () => {
                                     Establish online presence of your business that drives revenue
                                 </h1>
                                 <p className={`max-w-full lg:max-w-[70%] my-5 text-xl ${lato}`}>
-                                    Results-driven web design, development, SEO, branding, copywriting & digital strategy.
+                                    Results-driven web design, CAC registration, SEO, branding, copywriting & digital mrketing strategy.
                                 </p>
                             </div>
                             <motion.div variants={childVariants}>
-                                <button className='px-10 py-5 w-full lg:w-fit flex items-center justify-center lg:justify-between text-black bg-blue-400 hover:bg-blue-500 duration-200 rounded-md'>
+                                <Button onPress={onOpen} size='lg' className='px-10 py-5 w-full lg:w-fit flex items-center justify-center lg:justify-between text-black bg-blue-400 hover:bg-blue-500 duration-200 rounded-md'>
                                     <FaRocket />
-                                    <span className={`ml-2 font-bold capitalize ${lato}`}>get a proposal</span>
-                                </button>
+                                    <span className={`ml-2 font-bold capitalize ${lato}`}>contact us</span>
+                                    <Modal
+                                        isOpen={isOpen}
+                                        onOpenChange={onOpenChange}
+                                        placement="top-center"
+                                    >
+                                        <ModalContent>
+                                            {(onClose) => (
+                                                <>
+                                                    <ModalHeader className="flex flex-col gap-1">Contact Us</ModalHeader>
+                                                    
+                                                    <ModalBody>
+                                                        <form action="https://formspree.io/f/mbljgnyk" method="POST">
+                                                            <Input
+                                                                name="name"
+                                                                placeholder="Your name"
+                                                                variant="bordered"
+                                                                required
+                                                            />
+                                                            <Input
+                                                                name="email"
+                                                                placeholder="Your email"
+                                                                type="email"
+                                                                variant="bordered"
+                                                                className='my-4'
+                                                                required
+                                                            />
+                                                            <Input
+                                                                name="subject"
+                                                                placeholder="Subject"
+                                                                variant="bordered"
+                                                            />
+                                                            <textarea
+                                                                id="message"
+                                                                name="message"
+                                                                placeholder="Your message"
+                                                                className="w-full p-2 mt-4 border-3 border-neutral-700 rounded-lg "
+                                                                required
+                                                            ></textarea>
+                                                            <ModalFooter>
+                                                                <Button color="danger" variant="light" onPress={onClose}>
+                                                                    Close
+                                                                </Button>
+                                                                <Button color="primary" type="submit" onPress={onClose}>
+                                                                    Send Message
+                                                                </Button>
+                                                            </ModalFooter>
+                                                        </form>
+                                                    </ModalBody>
+                                                </>
+                                            )}
+                                        </ModalContent>
+                                    </Modal>
+                                </Button>
                             </motion.div>
                         </div>
 
@@ -58,7 +115,7 @@ const Hero = () => {
                                 <FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStar />
                             </span>
                             <p className='w-full lg:max-w-[50%] text-md lg:text-lg py-3'>
-                            &quot;Our new site has a 60% higher conversion rate than our old one&quot;
+                                &quot;Our new site has a 60% higher conversion rate than our old one&quot;
                             </p>
                             <div className='flex items-center py-1 lg:py-3'>
                                 <Avatar className='' size='lg' isBordered src="/assets/profiles/four.jpg" />

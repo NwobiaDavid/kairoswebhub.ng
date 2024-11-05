@@ -4,6 +4,8 @@ import { FaRocket } from 'react-icons/fa';
 import { roboto_mono, luckiest_guy, black_han_sans, lato } from "../app/fonts"; // Ensure the import path is correct
 import { motion, useInView } from 'framer-motion';
 import React, { useRef } from 'react';
+import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Checkbox, Input, Link } from "@nextui-org/react";
+import { CiLock, CiMail } from 'react-icons/ci';
 
 const Footer = () => {
   const containerRef = useRef(null);
@@ -23,6 +25,8 @@ const Footer = () => {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
   };
+
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   return (
     <motion.div
@@ -63,12 +67,62 @@ const Footer = () => {
             <h4 className={`text-lg my-10 ${lato}`}>
               Let&apos;s find out if we&apos;re a good fit for each other.
             </h4>
-            <button className='px-10 py-5 flex items-center justify-between text-black bg-blue-400 hover:bg-blue-500 duration-200 rounded-md'>
-              <FaRocket />
-              <span className={`ml-2 font-bold capitalize ${lato}`}>
-                get a proposal
-              </span>
-            </button>
+            <Button onPress={onOpen} size='lg' className='px-10 py-5 w-full lg:w-fit flex items-center justify-center lg:justify-between text-black bg-blue-400 hover:bg-blue-500 duration-200 rounded-md'>
+                                    <FaRocket />
+                                    <span className={`ml-2 font-bold capitalize ${lato}`}>contact us</span>
+                                    <Modal
+                                        isOpen={isOpen}
+                                        onOpenChange={onOpenChange}
+                                        placement="top-center"
+                                    >
+                                        <ModalContent>
+                                            {(onClose) => (
+                                                <>
+                                                    <ModalHeader className="flex flex-col gap-1">Contact Us</ModalHeader>
+                                                    
+                                                    <ModalBody>
+                                                        <form action="https://formspree.io/f/mbljgnyk" method="POST">
+                                                            <Input
+                                                                name="name"
+                                                                placeholder="Your name"
+                                                                variant="bordered"
+                                                                required
+                                                            />
+                                                            <Input
+                                                                name="email"
+                                                                placeholder="Your email"
+                                                                type="email"
+                                                                variant="bordered"
+                                                                className='my-4'
+                                                                required
+                                                            />
+                                                            <Input
+                                                                name="subject"
+                                                                placeholder="Subject"
+                                                                variant="bordered"
+                                                            />
+                                                            <textarea
+                                                                id="message"
+                                                                name="message"
+                                                                placeholder="Your message"
+                                                                className="w-full p-2 mt-4 border-3 border-neutral-700 rounded-lg "
+                                                                required
+                                                            ></textarea>
+                                                            <ModalFooter>
+                                                                <Button color="danger" variant="light" onPress={onClose}>
+                                                                    Close
+                                                                </Button>
+                                                                <Button color="primary" type="submit" onPress={onClose}>
+                                                                    Send Message
+                                                                </Button>
+                                                            </ModalFooter>
+                                                        </form>
+                                                    </ModalBody>
+                                                </>
+                                            )}
+                                        </ModalContent>
+                                    </Modal>
+                                </Button>
           </div>
         </motion.div>
 

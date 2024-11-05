@@ -9,13 +9,13 @@ import { motion, useInView } from "framer-motion";
 const Features = () => {
   const contents = [
     {
-      title: "Custom web design, logo design & branding",
+      title: "Custom web design & SEO services",
     },
     {
-      title: "Custom web design, logo design & branding",
+      title: "CAC business Registration",
     },
     {
-      title: "Custom web design, logo design & branding",
+      title: "Branding & Logo Design",
     },
   ];
 
