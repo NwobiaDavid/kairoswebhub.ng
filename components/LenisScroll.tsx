@@ -7,7 +7,6 @@ const LenisScroll: React.FC = () => {
     const lenis = new Lenis({
       // Configure Lenis options here
       duration: 1.2,          // Adjust duration for scroll timing
-      smooth: true,           // Enable smooth scroll
       easing: (t) => t * (2 - t),  // Default easing function
       orientation: 'vertical', // For vertical scrolling
       gestureOrientation: 'vertical',
