@@ -55,7 +55,7 @@ const Testimonials = () => {
             variants={containerVariants}
         >
             <motion.div
-                className="flex flex-col lg:flex-row w-full lg:w-[70%] justify-between gap-5 items-center h-full"
+                className="flex flex-col lg:flex-row w-full lg:w-[90%] xl:w-[70%] justify-between gap-5 items-center h-full"
                 variants={containerVariants}
             >
                 {data.map((item, index) => (

@@ -30,10 +30,9 @@ export default function Home() {
 
 
   return (
-    <main  className=' ' >
+    <main  className=' max-w-screen overflow-hidden ' >
       <Navbar />
       <div className=" h-[125vh] lg:h-[115vh]"><Hero/></div>
-      
       <Testimonials />
       <Features />
       <Projects />

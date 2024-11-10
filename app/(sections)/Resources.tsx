@@ -76,17 +76,17 @@ const Resources = () => {
                         <motion.div
                             key={index}
                             variants={itemVariants}
-                            className='hover:shadow-lg duration-200 bg-white rounded-sm lg:h-[550px] lg:w-[450px] w-full h-[500px] lg:px-4 lg:py-4 py-2 px-2'
+                            className='hover:shadow-lg duration-200 bg-white rounded-sm lg:h-[550px] lg:w-full xl:w-[450px] w-full h-[500px] lg:px-4 lg:py-4 py-2 px-2'
                         >
                             <Link
                                 href={item.link}
                                 target='_blank'
                                 className='w-full h-full'
                             >
-                                <div className='w-full flex justify-center object-cover overflow-hidden items-center h-[50%]'>
+                                <div className='w-full flex justify-center  overflow-hidden items-center h-[50%]'>
                                     <Image
                                         radius='sm'
-                                        className='border z-0 lg:w-[450px] h-[250px] lg:h-[300px]'
+                                        className='border z-0 lg:w-[450px] h-[250px] object-cover lg:h-[300px]'
                                         alt="NextUI hero Image with delay"
                                         src={item.image}
                                     />

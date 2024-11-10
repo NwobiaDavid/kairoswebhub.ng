@@ -109,12 +109,12 @@ const OurProcess = () => {
                     {process.map((item, index) => (
                         <motion.div
                             key={index}
-                            className={`flex px-0 lg:px-5 py-7 flex-col lg:flex-row border-b mb-5 ${index % 2 === 0 ? 'flex-col-reverse lg:flex-row-reverse' : ''}`}
+                            className={`flex px-0 lg:px-5 py-7 flex-col lg:flex-row border-b mb-5 ${index % 2 === 0 ? 'flex-col lg:flex-row-reverse' : ''}`}
                             variants={itemVariants}
                         >
-                            <div className='w-full lg:w-[30%] flex justify-center items-center'>
+                            <div className='w-full flex justify-center items-center'>
                                 <Image
-                                    className='z-0 rounded-none w-full h-full object-contain'
+                                    className='z-0 rounded-none md:w-[50%]  lg:w-[30%] w-[70%] h-full object-contain'
                                     alt={item.title}
                                     src={item.image}
                                 />

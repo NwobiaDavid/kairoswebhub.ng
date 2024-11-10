@@ -29,21 +29,21 @@ const Hero = () => {
 
 
     return (
-        <div ref={ref} id='hero' className='w-full pt-20 lg:pt-40 h-full bg-black'>
+        <div ref={ref} id='hero' className='w-full pt-10 md:pt-20  2xl:pt-40 h-full bg-black'>
             <motion.div
                 className="lg:mx-auto relative max-w-full lg:max-w-7xl h-full"
                 initial="hidden"
                 animate={isInView ? "visible" : "hidden"}
                 variants={containerVariants}
             >
-                <div className="flex lg:flex-row flex-col pt-20 justify-between h-[90%] lg:h-[85%] w-full">
+                <div className="flex lg:flex-row flex-col pt-20  justify-between h-[90%] lg:h-[85%] w-full">
                     <motion.div
-                        className='w-full px-3 lg:px-0 lg:w-[60%]'
+                        className='w-full px-3 xl:px-2 lg:w-[60%]'
                         variants={childVariants}
                     >
                         <div>
                             <div className='mb-[35px]'>
-                                <h1 className={`font-semibold text-5xl leading-[45px] lg:text-6xl opacity-95 ${black_han_sans}`}>
+                                <h1 className={`font-semibold text-4xl md:text-5xl leading-[45px] xl:text-6xl opacity-95 ${black_han_sans}`}>
                                     Establish online presence of your business that drives revenue
                                 </h1>
                                 <p className={`max-w-full lg:max-w-[70%] my-5 text-xl ${lato}`}>
@@ -110,11 +110,11 @@ const Hero = () => {
                             </motion.div>
                         </div>
 
-                        <motion.div className='p-2 mt-20' variants={childVariants}>
+                        <motion.div className='p-2 mt-14 md:mt-20' variants={childVariants}>
                             <span className='max-w-[30%] lg:max-w-[15%] justify-around flex text-yellow-500'>
                                 <FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStar />
                             </span>
-                            <p className='w-full lg:max-w-[50%] text-md lg:text-lg py-3'>
+                            <p className='w-full lg:max-w-[50%] text-base xl:text-lg py-3'>
                                 &quot;Our new site has a 60% higher conversion rate than our old one&quot;
                             </p>
                             <div className='flex items-center py-1 lg:py-3'>
