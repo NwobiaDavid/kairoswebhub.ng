@@ -186,7 +186,7 @@ const Hero = () => {
                                 }}
                             ></motion.div>
                             <motion.div
-                                className='w-[70%] h-full bg-blue-500 border bg-[url("/assets/hero/oneee.webp")] bg-cover bg-no-repeat rounded-lg p-2'
+                                className='w-[70%] h-full bg-blue-500 border bg-[url("/assets/hero/fourrr.jpg")] bg-cover bg-no-repeat rounded-lg p-2'
                                 variants={{
                                     hidden: { opacity: 0, y: 50 },
                                     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }

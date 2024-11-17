@@ -8,22 +8,22 @@ import { motion, useInView } from 'framer-motion';
 const Testimonials = () => {
     const data = [
         {
-            name: "Norah Landry",
+            name: "Chinelo Nwankwo",
             company: "White Physiotherapy Clinic",
             img: "/assets/profiles/one.webp",
-            comment: '"Our site consistently ranks #1 on Google, thanks to Azuro Digital"',
+            comment: '"The team transformed our website and boosted our online presence beyond expectations!"',
         },
         {
-            name: "Olawane Agenlina",
+            name: "Olawale Adedayo",
             company: "Ville Worth",
             img: "/assets/profiles/three.jpg",
-            comment: '"Our site consistently ranks #1 on Google, thanks to Azuro Digital"',
+            comment: '"Their expertise helped us attract more clients than ever before."',
         },
         {
-            name: "Norah Landry",
+            name: "Ngozi Adekunle",
             company: "Peniel Crest School ",
             img: "/assets/profiles/two.webp",
-            comment: '"Our site consistently ranks #1 on Google, thanks to Azuro Digital"',
+            comment: '"Professional service with results that speak for themselves!"',
         },
     ];
 

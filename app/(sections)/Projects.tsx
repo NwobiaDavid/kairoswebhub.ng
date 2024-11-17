@@ -26,18 +26,18 @@ const Projects = () => {
             name: "White Physiotherapy Clinic"
         },
         {
-            image: "/assets/projects/",
-            link: "#",
+            image: "/assets/projects/kelani.png",
+            link: "https://kelani.ng/consulting",
             name: "Kelani"
         },
         {
             image: "/assets/projects/pally thumb.PNG",
-            link: "#",
+            link: "https://pallly-online.vercel.app/",
             name: "Pallly"
         },
         {
-            image: "/assets/projects/pally thumb.PNG",
-            link: "#",
+            image: "/assets/projects/nwd.PNG",
+            link: "https://nwobia-david-portfolio.vercel.app/",
             name: "Personal website"
         },
 
@@ -80,8 +80,8 @@ const Projects = () => {
                                 <div className='w-full flex justify-center lg:justify-start items-center h-[75%]'>
                                     <Image
                                         radius='sm'
-                                        className='border z-0 w-full h-[150px] lg:w-[400px] lg:h-[250px]'
-                                        alt="NextUI hero Image with delay"
+                                        className='border object-cover z-0 w-full h-[150px] lg:w-[400px] lg:h-[250px]'
+                                        alt={item.name}
                                         src={item.image}
                                     />
                                 </div>

@@ -10,24 +10,24 @@ import { motion, useInView } from "framer-motion";
 const Resources = () => {
     const resources = [
         {
-            title: "7 reasons to make your car dealership website professional",
+            title: "Why Is Good Web Design Important?",
             image: "/assets/resources/one.jpg",
-            link: "https://www.pixelconcept.de/en/beste-grunde-fur-autohaus-webseite/"
+            link: "https://www.digitalsilk.com/digital-trends/why-good-web-design-is-important/"
         },
         {
-            title: "Importance of Your Dealership's Website",
+            title: "Why Web Design & Development Is So Important for Business",
             image: "/assets/resources/to.jpeg",
-            link: "https://www.linkedin.com/pulse/importance-digital-marketing-car-dealerships-new-road-advertising-z775c?trk=public_post"
+            link: "https://www.linkedin.com/pulse/why-web-design-development-so-important-business-brandingnuts/"
         },
         {
-            title: "What Key Features Do Car Buyers Expect From Car Dealer Websites?",
-            image: "/assets/resources/two.jpg",
-            link: "https://www.dragon2000.co.uk/what-key-features-do-car-buyers-expect-from-car-dealer-websites/"
+            title: "The Importance of SEO for Your Business",
+            image: "/assets/resources/tooo.webp",
+            link: "https://www.metricmarketing.com/blog/the-importance-of-seo-for-your-business-benefits-of-seo-why-seo-is-so-powerful/"
         },
         {
-            title: "The Importance of Local SEO for Car Dealerships",
-            image: "/assets/resources/four.jpeg",
-            link: "https://www.get.dealer/blog/the-importance-of-local-seo-for-car-dealerships"
+            title: "Importance of Website: Why Website is Important for a Business",
+            image: "/assets/resources/treee.jpg",
+            link: "https://www.seattlenewmedia.com/blog/importance-of-website-for-business"
         },
     ];
 
