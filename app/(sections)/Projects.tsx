@@ -11,29 +11,34 @@ const Projects = () => {
 
     const projects = [
         {
-            image: "https://cdn.prod.website-files.com/637116ed63d653540d84bcc3/652854bc05523722a7e5422b_Twisted%20Nail%20Mockup-p-500.jpg",
-            link: "#",
-            name: "car agency"
+            image: "/assets/projects/villeworth.jpeg",
+            link: "https://www.villeworth.com/",
+            name: "Ville Worth"
         },
         {
-            image: "https://cdn.prod.website-files.com/637116ed63d653540d84bcc3/652854bc05523722a7e5422b_Twisted%20Nail%20Mockup-p-500.jpg",
-            link: "#",
-            name: "car agency"
+            image: "/assets/projects/penail.jpeg",
+            link: "https://www.penielcrestschool.com/",
+            name: "Peniel Crest School"
         },
         {
-            image: "https://cdn.prod.website-files.com/637116ed63d653540d84bcc3/652854bc05523722a7e5422b_Twisted%20Nail%20Mockup-p-500.jpg",
-            link: "#",
-            name: "car agency"
+            image: "/assets/projects/",
+            link: "https://www.whitephysiotherapyclinic.com.ng/",
+            name: "White Physiotherapy Clinic"
         },
         {
-            image: "https://cdn.prod.website-files.com/637116ed63d653540d84bcc3/652854bc05523722a7e5422b_Twisted%20Nail%20Mockup-p-500.jpg",
+            image: "/assets/projects/",
             link: "#",
-            name: "car agency"
+            name: "Kelani"
         },
         {
-            image: "https://cdn.prod.website-files.com/637116ed63d653540d84bcc3/652854bc05523722a7e5422b_Twisted%20Nail%20Mockup-p-500.jpg",
+            image: "/assets/projects/pally thumb.PNG",
             link: "#",
-            name: "car agency"
+            name: "Pallly"
+        },
+        {
+            image: "/assets/projects/pally thumb.PNG",
+            link: "#",
+            name: "Personal website"
         },
 
     ];

@@ -9,19 +9,19 @@ const Testimonials = () => {
     const data = [
         {
             name: "Norah Landry",
-            company: "Pegasus Imagery",
+            company: "White Physiotherapy Clinic",
             img: "/assets/profiles/one.webp",
             comment: '"Our site consistently ranks #1 on Google, thanks to Azuro Digital"',
         },
         {
-            name: "Norah Landry",
-            company: "Pegasus Imagery",
+            name: "Olawane Agenlina",
+            company: "Ville Worth",
             img: "/assets/profiles/three.jpg",
             comment: '"Our site consistently ranks #1 on Google, thanks to Azuro Digital"',
         },
         {
             name: "Norah Landry",
-            company: "Pegasus Imagery",
+            company: "Peniel Crest School ",
             img: "/assets/profiles/two.webp",
             comment: '"Our site consistently ranks #1 on Google, thanks to Azuro Digital"',
         },

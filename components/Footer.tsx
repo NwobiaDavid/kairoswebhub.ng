@@ -59,7 +59,7 @@ const Footer = () => {
         >
           <div className='w-full lg:w-[60%] text-center flex p-5 flex-col justify-center items-center mb-5'>
             <h2 className={`font-bold opacity-70 text-xl  ${black_han_sans}`}>
-              TheBluePixelAgency
+              Kairos Webhub
             </h2>
             <h1 className={`text-5xl mt-10 leading-[50px]  ${black_han_sans}`}>
               As your partner, we treat your website like it&apos;s our own
@@ -131,9 +131,9 @@ const Footer = () => {
           variants={itemVariants}
         >
           <div className='w-full lg:text-base text-center leading-6 flex-col flex lg:flex-row justify-between border-t py-5'>
-            <span>Copyright © The Blue Pixel Agency Inc.</span>
+            <span>Copyright © Kairos Webhub LLC.</span>
             <span className='my-3 lg:my-0'>Privacy Policy</span>
-            <span>Based in Lagos, Ogun & Ebonyi</span>
+            <span>Based in Lagos, Nigeria</span>
           </div>
         </motion.div>
       </motion.div>

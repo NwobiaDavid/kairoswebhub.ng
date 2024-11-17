@@ -8,8 +8,8 @@ import ReactLenis from "lenis/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "The BluePixel Agency",
-  description: "A Car dealership web design agency based in Nigeria",
+  title: "Kairos Webhub",
+  description: "A web design agency that focuses on offering the best web solutions to clients based in Nigeria",
 };
 
 

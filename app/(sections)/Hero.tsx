@@ -149,20 +149,24 @@ const Hero = () => {
                                 visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
                             }}
                         >
+
+
                             <motion.div
-                                className='w-[60%] h-full bg-blue-500 rounded-lg p-2'
+                                className={`w-[60%] h-full bg-blue-500 bg-[url("/assets/hero/oneee.webp")] bg-cover border bg-no-repeat rounded-lg p-2`}
                                 variants={{
                                     hidden: { opacity: 0, y: 50 },
                                     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
                                 }}
                             ></motion.div>
                             <motion.div
-                                className='w-[40%] h-full bg-blue-500 rounded-lg p-2'
+                                className='w-[40%] h-full bg-blue-500 bg-[url("/assets/hero/twooo.jpg")] bg-cover bg-no-repeat rounded-lg p-2'
                                 variants={{
                                     hidden: { opacity: 0, y: 50 },
                                     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
                                 }}
                             ></motion.div>
+
+
                         </motion.div>
 
                         {/* Second row of boxes */}
@@ -173,20 +177,23 @@ const Hero = () => {
                                 visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
                             }}
                         >
+
                             <motion.div
-                                className='w-[30%] h-full bg-blue-500 rounded-lg p-2'
+                                className='w-[30%] h-full bg-blue-500 bg-[url("/assets/hero/threee.jpeg")] bg-cover bg-no-repeat rounded-lg p-2'
                                 variants={{
                                     hidden: { opacity: 0, y: 50 },
                                     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
                                 }}
                             ></motion.div>
                             <motion.div
-                                className='w-[70%] h-full bg-blue-500 rounded-lg p-2'
+                                className='w-[70%] h-full bg-blue-500 border bg-[url("/assets/hero/oneee.webp")] bg-cover bg-no-repeat rounded-lg p-2'
                                 variants={{
                                     hidden: { opacity: 0, y: 50 },
                                     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
                                 }}
                             ></motion.div>
+
+
                         </motion.div>
                     </motion.div>
 
@@ -194,7 +201,7 @@ const Hero = () => {
 
                 <motion.div className="w-full h-[10%] lg:h-[15%] justify-center flex items-end" variants={childVariants}>
                     <h1 className={`font-bold p-4 text-2xl lg:text-4xl tracking-wider capitalize text-center opacity-30 ${black_han_sans}`}>
-                        the blue pixel agency
+                        Kairos WebHub
                     </h1>
                 </motion.div>
             </motion.div>
